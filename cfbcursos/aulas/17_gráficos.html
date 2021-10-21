@@ -5,9 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gráficos &lt;canvas&gt;</title>
+    <style>
+        canvas{border: 1px #000 solid;}
+    </style>
+    <script>
+        function desenha() {
+            var canvas = document.getElementById('telaDesenho');
+            var ctx = canvas.getContext('2d');
+            ctx.fillRect(25, 25, 100, 100);
+        }
+    </script>
 </head>
 <body>
 
-<!-- Desenhar gráficos - <canvas> == display: block;  -->
+<!-- Desenhar gráficos - <canvas> == display: block;
+    id="" -> identificador;
+    width="" -> largura;
+    height="" -> altura -->
+    <canvas id="telaDesenho" width="500px" height="500px">
+        Seu browzer não tem suporte ao elemento canvas!
+    </canvas>
+    <script>desenha();</script>
 </body>
 </html>
