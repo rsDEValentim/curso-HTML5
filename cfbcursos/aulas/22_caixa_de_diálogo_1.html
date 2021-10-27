@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caixa de Diálogo &lt;dialog&gt;</title>
+    <title>Caixa de Diálogo 1 &lt;dialog&gt;</title>
     <script>
         function abrirDialog(){
             document.getElementById("d1").setAttribute("open","");
@@ -15,8 +15,9 @@
     </script>
 </head>
 <body>
-<!-- <dialog> == 
-    Define uma caixa de diálogo ou subjanela.-->
+<!-- <dialog> == ?
+    Define uma caixa de diálogo ou subjanela
+    open -> Caixa aberta(se tiver esse atributo, não será exibido a caixa). -->
     <button onclick="abrirDialog()">Abrir</button>
     <button onclick="fecharrDialog()">Fechar</button>
     <dialog id="d1" open>
